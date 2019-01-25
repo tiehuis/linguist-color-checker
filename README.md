@@ -1,3 +1,5 @@
+### Usage
+
 First, get the binary.
 
     go get -u github.com/tiehuis/linguist-color-checker
@@ -8,6 +10,7 @@ searches the current directory for a file named languages.yml.
     wget https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml
 
 To render an html page of all languages closer than the default minimum threshold.
+The rendered html is written to `output.html`.
 
     linguist-color-checker -html
 
@@ -20,3 +23,7 @@ Available options are:
             threshold for printing color differences (default 10)
       -yaml string
             location of language specification file (default "languages.yml")
+
+### Example Output
+
+![Example Output](./example.png)
